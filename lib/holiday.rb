@@ -78,7 +78,12 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.each do |name, items|
       items.each do |word|
         if word == "BBQ"
-          bbq_array <<
+          bbq_array << name
+        end
+      end
+    end
+  end
+  bbq_array
 end
 
 
